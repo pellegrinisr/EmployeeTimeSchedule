@@ -1,94 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-  
-  <script src="employeeTime.js"></script>
-    <style>
-            body {font-family: Arial, Helvetica, sans-serif;}
-            
-            input[type=text], select, textarea {
-               width: 100%;
-               padding: 12px;
-               border: 1px solid #ccc;
-               border-radius: 4px;
-               box-sizing: border-box;
-               margin-top: 6px;
-               margin-bottom: 16px;
-               resize: vertical;
-            }
-            
-            input[type=submit] {
-               background-color: #4CAF50;
-               color: white;
-               padding: 12px 20px;
-               border: none;
-               border-radius: 4px;
-               cursor: pointer;
-            }
-            
-            input[type=submit]:hover {
-               background-color: #45a049;
-            }
-            h2 {
-            font-size: 50px;
-            text-align: center;
-            margin-top: 40px;
-            padding-top:20px;
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<title>Page Title</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="assets/css/style.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery.js">
+	</script>
+	<script src="assets/java/java.js">
+	</script>
+	<style>
+	           body {font-family: Arial, Helvetica, sans-serif;}
+	           
+	           input[type=text], select, textarea {
+	              width: 100%;
+	              padding: 12px;
+	              border: 1px solid #ccc;
+	              border-radius: 4px;
+	              box-sizing: border-box;
+	              margin-top: 6px;
+	              margin-bottom: 16px;
+	              resize: vertical;
+	           }
+	           
+	           input[type=submit] {
+	              background-color: #4CAF50;
+	              color: white;
+	              padding: 12px 20px;
+	              border: none;
+	              border-radius: 4px;
+	              cursor: pointer;
+	           }
+	           
+	           input[type=submit]:hover {
+	              background-color: #45a049;
+	           }
+	           h2 {
+	           font-size: 50px;
+	           text-align: center;
+	           padding-top:20px;
 
-            }
-            
-form {
-    border: #203256;
-    border-style: solid;
-    border-width: 0.5px;
-    padding: 10px;
-}
-.container
-{
-    background: #203256;
-    height: 100px;
-    width: 100%;
-    color: white;
-    font-weight: bold;
-    margin-top: 30px;
-}
+	           }
+	           h6{
+	               color: #203256;
+	           }
+	           
+	form {
+	   border: #203256;
+	   border-style: solid;
+	   border-width: 0.5px;
+	   padding: 10px;
+	}
+	.container
+	{
+	   background: #203256;
+	   height: 100px;
+	   width: 100%;
+	   color: white;
+	   font-weight: bold;
+	   margin-top: 30px;
+	}
 
-         .nav {
-                background-color: #203256; 
-                color: #ffff;
-                list-style-type: none;
-                text-align: center;
-                margin: 0;
-                padding: 1px;
-            }
-            
-            .nav li {
-                display: inline-block;
-                font-size: 20px;
-                
-               
-            }
-            img{
-                width:100%;
-    min-width:100%;
-    background-position:left top;
-    background-image:url(images/banner.png);
-    background-repeat:no-repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-            }
-            </style>
+	        .nav {
+	               background-color: #203256; 
+	               color: #ffff;
+	               list-style-type: none;
+	               text-align: center;
+	               margin: 0;
+	               padding: 1px;
+	           }
+	           
+	           .nav li {
+	               display: inline-block;
+	               font-size: 20px;
+	               
+	              
+	           }
+	</style>
 </head>
 <body>
+<<<<<<< HEAD
     
     <div class="container">
             
@@ -139,5 +132,23 @@ form {
         </table>
     </div>
           
+=======
+	<div class="container">
+		<div class="container">
+			<h2>EMPLOYEE DATA MANGEMENT</h2>
+		</div><br>
+		<form action="/action_page.php">
+			<div class="nav">
+				Add Employee
+			</div><br>
+			<h6>EMPLOYEE NAME</h6><input id="fname" name="firstname" placeholder="Search Term" type="text">
+			<h6>ROLE</h6><input id="fname" name="firstname" placeholder="Search Term" type="text">
+			<h6>START DATE (MM/DD/YYYY)</h6><input id="lname" name="lastname" placeholder="Start Year" type="text">
+			<h6>MONTHLY RATE</h6><input id="lname" name="lastname" placeholder="End Year" type="text"><br>
+			<br>
+			<input type="submit" value="Submit">
+		</form><br>
+	</div>
+>>>>>>> 0f1be5fb360bdf76d920231ac5bc675aed354292
 </body>
 </html>
