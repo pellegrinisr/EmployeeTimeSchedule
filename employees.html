@@ -9,7 +9,7 @@
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-	<script src="assets/java/java.js">
+	<script src="employeeTime.js">
 	</script>
 	<style>
 	           body {font-family: Arial, Helvetica, sans-serif;}
@@ -95,18 +95,17 @@
             <div class=nav>Add Employee</div>
             <br>
                 <label for="fname">Employee Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Search Term">
+                <input type="text" id="fname" name="firstname" placeholder="First Name">
             
                 <label for="lname">Role</label>
-                <input type="text" id="lname" name="lastname" placeholder="Search Term">
-                
+                <input type="text" id="lname" name="lastname" placeholder="Last Name">
                 
                 <label for="startDate">Start Date (MM/DD/YY)</label>
-                <input type="text" id="startDate" name="startDate" placeholder="Start Year">
+                <input type="text" id="startDate" name="startDate" placeholder="Start Date">
             
             
                 <label for='monthlyRate'>Monthly Rate</label>
-                <input type="text" id="monthlyRate" name="monthlyRate" placeholder="End Year">
+                <input type="text" id="monthlyRate" name="monthlyRate" placeholder="Monthly Rate">
             <br>
             <br>
                 <input type="submit" value="Submit" id="submit-button">

@@ -16,14 +16,22 @@ $(document).ready(function() {
 
     });
 
-    $('#submit-button').on('click', function() {
+    $('#submit-button').on('click', function(event) {
+        event.preventDefault();
         var firstName = $('#fname').val().trim();
-        var lastName = $('#lname').vale().trim();
+        var lastName = $('#lname').val().trim();
         var startDate = $('#startDate').val().trim();
         var monthlyRate = $('#monthlyRate').val().trim();
         console.log(firstName);
         console.log(lastName);
         console.log(startDate);
-        console.log(montlyRate);
+        console.log(monthlyRate);
+        database.ref().push({
+            firstName: firstName,
+            lastName: lastName,
+            startDate: startDate,
+            monthlyRate: monthlyRate
+        });
+
     });
 })
