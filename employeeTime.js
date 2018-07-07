@@ -15,4 +15,8 @@ $(document).ready(function() {
     database.ref().on('value', function() {
 
     });
+
+    $('#submit-button').on('click', function() {
+        
+    })
 })
