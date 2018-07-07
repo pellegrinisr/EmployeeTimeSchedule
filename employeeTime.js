@@ -23,17 +23,17 @@ $(document).ready(function() {
 
     $('#submit-button').on('click', function(event) {
         event.preventDefault();
-        var firstName = $('#fname').val().trim();
-        var lastName = $('#lname').val().trim();
+        var fullName = $('#fname').val().trim();
+        var role = $('#role').val().trim();
         var startDate = $('#startDate').val().trim();
         var monthlyRate = $('#monthlyRate').val().trim();
-        console.log(firstName);
-        console.log(lastName);
+        console.log(fullName);
+        console.log(role);
         console.log(startDate);
         console.log(monthlyRate);
         database.ref().push({
-            firstName: firstName,
-            lastName: lastName,
+            fullName: fullName,
+            role: role,
             startDate: startDate,
             monthlyRate: monthlyRate
         });
@@ -42,5 +42,33 @@ $(document).ready(function() {
         $('#startDate').val('');
         $('#monthlyRate').val('');
     });
+    
+        //here we will calculate the months between
+       
+       // var dateValue = moment().toISOString();
 
-})
+        //==========================================
+
+    function addToTable(fullName, role, startDate, monthsWorked, monthlyRate, totalBilled) {
+        var myNewRow = $('<tr>');
+        var nameDataTag = $('<td>');
+        nameDataTag.html(fullName);
+        myNewRow.append(nameDataTag);
+        var roleDataTag = $('<td>');
+        roleDataTag.html(role);
+        myNewRow.append(roleDataTag);
+        var startDateDataTag = $('<td>');
+        startDateDataTag.html(startDate);
+        myNewRow.append(startDateDataTag);
+        var monthsWorkedDataTag = $('<td>');
+        monthsWorkedDataTag.html(monthsWorked);
+        myNewRow.append(monthsWorkedDataTag);
+        var monthlyRateDataTag = $('<td>');
+        monthlyRateDataTag.html(monthlyRate);
+        myNewRow.append(monthlyRateDataTag);
+        var totalBilledDataTag = $('<td>');
+        totalBilledDataTag.html(totalBilled);
+        myNewRow.append(totalBilledDataTag);
+        $('#employee-output'),append(myNewrow);
+    }
+});
