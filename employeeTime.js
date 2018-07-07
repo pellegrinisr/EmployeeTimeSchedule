@@ -17,6 +17,13 @@ $(document).ready(function() {
     });
 
     $('#submit-button').on('click', function() {
-        
-    })
+        var firstName = $('#fname').val().trim();
+        var lastName = $('#lname').vale().trim();
+        var startDate = $('#startDate').val().trim();
+        var monthlyRate = $('#monthlyRate').val().trim();
+        console.log(firstName);
+        console.log(lastName);
+        console.log(startDate);
+        console.log(montlyRate);
+    });
 })
