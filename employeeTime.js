@@ -32,6 +32,9 @@ $(document).ready(function() {
             startDate: startDate,
             monthlyRate: monthlyRate
         });
-
+        $('#fname').val('');
+        $('#lname').val('');
+        $('#startDate').val('');
+        $('#monthlyRate').val('');
     });
 })
