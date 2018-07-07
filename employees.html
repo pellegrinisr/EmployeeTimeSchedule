@@ -4,14 +4,12 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" >        
-      <script src="https://code.jquery.com/jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
   
-  <script src="assets/java/java.js"></script>
+  <script src="employeeTime.js"></script>
     <style>
             body {font-family: Arial, Helvetica, sans-serif;}
             
@@ -102,24 +100,24 @@ form {
         </div>
         <br>
         <form action="/action_page.php">
-        <div class=nav>Add Employee</div>
-        <br>
-            <label for="fname">Employee Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Search Term">
-         
-            <label for="lname">Role</label>
-            <input type="text" id="lname" name="lastname" placeholder="Search Term">
+            <div class=nav>Add Employee</div>
+            <br>
+                <label for="fname">Employee Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Search Term">
+            
+                <label for="lname">Role</label>
+                <input type="text" id="lname" name="lastname" placeholder="Search Term">
+                
+                
+                <label for="startDate">Start Date (MM/DD/YY)</label>
+                <input type="text" id="startDate" name="startDate" placeholder="Start Year">
             
             
-            <label for="startDate">Start Date (MM/DD/YY)</label>
-            <input type="text" id="startDate" name="startDate" placeholder="Start Year">
-        
-         
-            <label for='monthlyRate'>Monthly Rate</label>
-            <input type="text" id="monthlyRate" name="monthlyRate" placeholder="End Year">
-         <br>
-         <br>
-            <input type="submit" value="Submit" id="submit-button">
+                <label for='monthlyRate'>Monthly Rate</label>
+                <input type="text" id="monthlyRate" name="monthlyRate" placeholder="End Year">
+            <br>
+            <br>
+                <input type="submit" value="Submit" id="submit-button">
           </form>        
           <br>
     </div>
