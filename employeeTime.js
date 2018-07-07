@@ -12,8 +12,13 @@ $(document).ready(function() {
 
     var database = firebase.database();
 
-    database.ref().on('value', function() {
-
+    database.ref().on('value', function(snapshot) {
+        snapshot.forEach(function(childSnapshot) {
+            var childKey = childSnapshot.key;
+            var childData = childSnapshot.val();
+            console.log(childKey);
+            console.log(childData);
+        });
     });
 
     $('#submit-button').on('click', function(event) {
@@ -37,4 +42,5 @@ $(document).ready(function() {
         $('#startDate').val('');
         $('#monthlyRate').val('');
     });
+
 })
