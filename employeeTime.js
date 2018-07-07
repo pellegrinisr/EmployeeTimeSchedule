@@ -11,4 +11,8 @@ $(document).ready(function() {
     firebase.initializeApp(config);
 
     var database = firebase.database();
+
+    database.ref().on('value', function() {
+
+    });
 })
